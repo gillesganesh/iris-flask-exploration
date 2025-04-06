@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prédiction de la Fleur - Iris Dataset</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h1 class="text-center">Bienvenue dans l'application de prédiction des fleurs</h1>
+        <p>
+            Ce projet utilise le célèbre dataset **Iris** pour prédire le type de fleur en fonction de certaines mesures.
+            Les variables mesurées sont les suivantes :
+        </p>
+        <ul>
+            <li>Longueur du sépale</li>
+            <li>Largeur du sépale</li>
+            <li>Longueur du pétale</li>
+            <li>Largeur du pétale</li>
+        </ul>
+        <p>
+            En envoyant ces mesures via l'API de l'application, notre modèle de machine learning vous donnera la prédiction
+            du type de fleur (Setosa, Versicolor ou Virginica).
+        </p>
+        <h2>Comment ça fonctionne ?</h2>
+        <p>
+            Vous pouvez envoyer une requête avec les dimensions du sépale et du pétale via un appel **POST** à l'API.
+            Le modèle vous renverra une prédiction sur le type de fleur. L'API est construite avec Flask et utilise un modèle 
+            de **Random Forest** pour effectuer la classification.
+        </p>
+        <h3>Tester l'API :</h3>
+        <ul>
+            <li>Utilisez l'outil **Postman** pour envoyer une requête **POST** avec les dimensions du sépale et du pétale.</li>
+            <li>Vous recevrez la classe prédite pour votre fleur : "Setosa", "Versicolor" ou "Virginica".</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
